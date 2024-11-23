@@ -43,9 +43,27 @@
     font-family: font-soho-gothic;
 }
 
+#container-skill {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+
+
+
 /*======================================= carousel =======================================*/
 /* page styles */
-.ax-hidden {
+/* .ax-hidden {
     visibility: hidden;
     position: absolute;
 }
@@ -243,3 +261,5 @@
     top: 4px;
     width: 2px;
 }
+
+*/

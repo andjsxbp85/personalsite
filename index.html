@@ -205,8 +205,7 @@
             </style>
             <div class="timeline-line relative pt-40">
                 <h1
-                    class="text-center top-[-3vw] left-[10vw] md:left-[20vw] lg:left-[25vw]
-                    font-inter text-[4vw] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-violet-800 drop-shadow-3xl">
+                    class="text-center font-inter text-[4em] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-violet-800 drop-shadow-2xl">
                     Working Experience
                 </h1>
                 <div class="timeline-1 timeline-arrow timeline-circle-point">
@@ -673,42 +672,124 @@
                 </div>
             </div>
         </section>
-        <section id="skills">
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
-            <!-- SKILLS here -->
+        <section id="skills" class="py-16 px-[10%]  md:px-[20%] bg-gradient-to-r from-green-500 via-emerald-500 to-lime-500">
+            <style type="text/tailwindcss">
+                .btnSlide {
+                    @apply absolute z-[10] top-[40%] text-[200%] md:text-[300%] rounded-full w-[1.5em] h-[1.5em] bg-blue-600 text-white flex items-center justify-center;
+                    &.left {
+                        @apply left-[-9%] md:left-[-20%] lg:left-[-14%]
+                    }
+                    &.right {
+                        @apply left-[97%] md:left-[105%]
+                    }
+                }
+            </style>
+            <h1 class="text-center text-[3rem] font-roboto font-bold text-white drop-shadow-2xl">My Skills</h1>
+            <h4 class="font-soho text-center font-bold text-sm text-black drop-shadow-lg text-white pb-12">Please Swipe
+                Left/Right</h4>
+            <div class="relative">
+                <i id="btn-left-skill" class="left btnSlide fa-solid fa-arrow-left"></i>
+                <i id="btn-right-skill" class="right btnSlide fa-solid fa-arrow-right"></i>
+                <div id="container-skill"
+                    class="overflow-x-scroll transition-all duration-500 bg-cyan-600 rounded-xl">
+                    <div class="relative flex items-center space-x-16 w-max px-4 py-8">
+                        <div id="skills-qa"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Software QA Engineer
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>BDD, Gherkin, Junit, Jbehave, Java, OOP,
+                                    Selenium, PHP, Mock, Mocha Js, Serenity,
+                                    Zalenium, Selenoid, Maven, Rest Assured, K6, Jmeter,
+                                    Json Schema Validator, Xpath, CSS Selector, Testlink, Xray
+                                    Cloud, Rest API, Katalon, Javascript, Shell, Testlink
+                                    , Locust, Espresso, UI Automator, Katalon, Appium
+                                    Playwright, Visual Test, Applitools, Postman, Webdriver IO,
+                                    Device Farm, Browserstack, Google Light House</p>
+                            </div>
+                        </div>
+                        <div id="skills-software"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Software Engineer
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>C++, Python, HTML, CSS, PHP, Javascript, jQuery,
+                                    Bootstrap, Gitlab CI/CD pipeline, Jenkins,
+                                    terraform, bash and script command, cronjob,
+                                    grafana, Codeigniter, Yii, Apache, AWS, (EC2,
+                                    Route 53, Cloud Front, S3 Simple Storage). Shell /
+                                    CLI, Open Computer Vision (CV), Big Query,
+                                    MySQL, PostgreSQL, Matlab, Regular Expression
+                                    (Regex), REST API, Java Swing (GUI), JavaFX,
+                                    Looker Data Studio
+                                </p>
+                            </div>
+                        </div>
+                        <div id="skills-electronic"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Electronics and<br> Embedded System
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p> Assembly, C, Eagle PCB Designer, Electronics
+                                    Simulator (Proteus, Ni Multisim, Circuit Maker), 32
+                                    Bit CooCoox for STM32 Family, STM Studio,
+                                    Codevision AVR for ATMega, Family, Arduino
+                                    Family, Raspberry PI, PWM and Other Signal,
+                                    Generator, ADC/DAC, Neural Networks & Artificial
+                                    Intelegence, FPGA Quartus, FPAA Anadigm
+                                    Designer, Rs485, Rs232, SIM 800, Accessing
+                                    Dynamixel Servomotor
+                                </p>
+                            </div>
+                        </div>
+                        <div id="skills-devops"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                DevOps Engineer
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>
+                                    Terraform, GCP, AWS, Trello, CI/CD, Travis, Docker, Jenkins, Git, Github, Gitlab,
+                                    Github
+                                    Action, Gitlab Pipeline, Terraform, Ansible, Grafana, Looker Studio, GCP Secret
+                                    Manager,
+                                    GCP APIs & Service Account, GCP Compute Engine, GCP Big Query, GCP IAM & Admin,
+                                    MySQL,
+                                    PostgreSQL, ETL
+                                </p>
+                            </div>
+                        </div>
+                        <div id="skills-project"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Project Management & Others
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>
+                                    Jira, Pivotal Tracker, Clickup, Agile Methodology,
+                                    Scrum Framework, Kanban Board, Testlink, Test
+                                    Management For Jira (TM4J), Corel Draw,
+                                    Paint.Net, Adobe Flash Animation, Mac OS,
+                                    Windows OS, Ubuntu OS (using SSH & SFTP),
+                                    aws, Linux , OS,Microsoft Office (Ms. Word, Ms.
+                                    Power Point, Ms. Excel, Ms. Outlook), Adobe
+                                    Audition
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         <section id="education-slide-show" class="bg-gradient-to-t from-emerald-400 via-teal-400 to-sky-500">
             <h2 class="font-soho text-center font-bold text-4xl pt-12 text-white  drop-shadow-lg">Educational Background
@@ -1002,8 +1083,8 @@
         </section>
         <section id="copyright" class="bg-black border-t-4 border-solid border-red-500">
             <h2 class="text-center text-white p-2">
-                Made with <i class="fa-solid fa-heart text-red-500"></i> by Anjas Muhammad Bangun.<br>
-                Copyright<i class="fa-regular fa-copyright align-super text-[10px]"></i> 2024 - All rights reserved.
+                Made with <i class="fa-solid fa-heart text-red-500"></i> by Anjas Muhammad Bangun<br>
+                Copyright<i class="fa-regular fa-copyright align-super text-[10px]"></i> 2024 - All rights reserved
             </h2>
         </section>
     </footer>

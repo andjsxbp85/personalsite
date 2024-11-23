@@ -45,7 +45,7 @@ for (let subNavbar of subNavbars) {
 
     //user click
     subNavbar.addEventListener("click", () => {
-        if(!subNavbar.classList.contains('mobile-active')) subNavbar.classList.add('mobile-active');
+        if (!subNavbar.classList.contains('mobile-active')) subNavbar.classList.add('mobile-active');
         else subNavbar.classList.remove('mobile-active')
     }, false);
 }
@@ -174,6 +174,65 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 });
 // ======================================= End of Button Form =======================================
+// ======================================= Start of Skill Swipe =======================================
+const containerSkill = document.querySelector('#container-skill')
+
+// Clicking Button
+const btnLeftSkill = document.querySelector('#btn-left-skill')
+const btnRightSkill = document.querySelector('#btn-right-skill')
+let holdingSwipeSkill
+
+btnLeftSkill.addEventListener('mousedown', (e) => {
+    holdingSwipeSkill = setInterval(() => {
+        containerSkill.scrollBy({
+            top: 0,
+            left: -10,
+            behavior: 'auto'
+        })
+    }, 10)
+})
+
+btnRightSkill.addEventListener('mousedown', (e) => {
+    holdingSwipeSkill = setInterval(() => {
+        containerSkill.scrollBy({
+            top: 0,
+            left: 10,
+            behavior: 'auto'
+        })
+    }, 10)
+})
+
+window.addEventListener('mouseup', () => {
+    clearInterval(holdingSwipeSkill)
+})
+
+// Swipping
+let draggingSkill = false;
+let initialX = 0
+containerSkill.addEventListener('mousedown', (e) => {
+    draggingSkill = true
+    initialX = e.clientX
+})
+
+window.addEventListener('mouseup', () => {
+    draggingSkill = false
+})
+
+containerSkill.addEventListener('mousemove', (e) => {
+    if (draggingSkill) {
+        const shiftX = e.clientX - initialX;
+        const currentScroll = containerSkill.scrollLeft;
+
+        // containerSkill.scrollLeft -= shiftX;
+        containerSkill.scrollBy({
+            top: 0,
+            left: -shiftX,
+            behavior: 'smooth'
+        })
+    }
+})
+
+// ======================================= End of Skill Swipe =======================================
 /*// ======================================= Start of Testimonial Carousel =======================================
 class Carousel {
     constructor(el) {
