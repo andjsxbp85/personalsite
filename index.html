@@ -23,18 +23,26 @@
             }
             .sub-navbar.active {
                 & .sub-navbar-items{
-                    @apply md:fixed md:pt-5 md:bg-cyan-500 md:flex md:flex-col md:items-start md:bg-clip-content md:rounded-b-xl shadow-xl overflow-hidden;
+                    @apply md:fixed md:pt-5 md:bg-cyan-500 md:flex md:flex-col md:items-start md:bg-clip-content md:rounded-b-xl md:shadow-xl overflow-hidden;
+                }
+            }
+            .sub-navbar.mobile-active {
+                & .sub-navbar-items{
+                    @apply pt-5 flex flex-col items-start overflow-hidden;
                 }
             }
         </style>
-        <nav id="top-navbar"
-            class="fixed w-[50vw] top-5 right-2 bg-cyan-500 rounded-xl transition-all duration-700 font-medium font-inter font-extrabold text-white z-50
-                                    md:top-0 md:left-0 py-0 md:w-full md:px-4 md:bg-transparent md:hover:bg-cyan-500 md:rounded-none md:h-[70px]">
-            <ul class="flex flex-col items-end px-4 py-3
-            md:flex-row md:items-center md:justify-between md:space-y-0">
+        <nav id="top-navbar" class="fixed top-5 right-2 py-3 bg-cyan-500 rounded-xl transition-all duration-700 font-medium font-soho font-extrabold text-white z-50
+         md:top-0 md:left-0 md:w-full md:px-4 md:bg-transparent md:hover:bg-cyan-500 md:rounded-none">
+            <div class="relative md:hidden">
+                <i id="toggle-navbar" class="fa-sharp fa-solid fa-bars text-right w-full px-4"></i>
+                <i id="close-navbar"
+                    class="fa-solid fa-xmark text-right w-full text-white absolute top-[-5px] right-[10px] hidden"></i>
+            </div>
+            <ul id="list-navbar" class="flex flex-col items-center px-4 space-y-2 w-[200px] transition-all duration-700 hidden
+                         md:flex md:flex-row md:justify-between md:items-center md:space-y-0 md:w-full">
                 <li class="flex w-full md:w-auto justify-between items-center">
                     <img class="flex mx-auto h-7 lg:h-10" src="assets/logo/panjang_transparent.png" alt="">
-                    <i id="toggle-navbar" class="fa-sharp fa-solid fa-bars md:hidden"></i>
                 </li>
                 <li class="lg:w-40 xl:w-96"><a href=""></a></li>
                 <li class="w-full text-center border-b-2 border-blue-600 py-3
@@ -43,14 +51,15 @@
                 <li class="w-full text-center border-b-2 border-blue-600 py-3
                 md:py-0 md:border-none md:w-auto"><a href="">About</a>
                 </li>
-                <li class="sub-navbar w-full text-center border-b-2 border-blue-600 py-3 
-                md:py-0 md:border-none md:w-auto">Web Tools&nbsp;
+                <li class="sub-navbar w-full text-center py-3 
+                            md:border-b-2 md:border-blue-600 md:py-0 md:border-none md:w-auto">
+                    Web Tools&nbsp;
                     <i class="fa-solid fa-angle-down"></i>
                     <ul class="sub-navbar-items hidden">
-                        <li class="p-3 hover:bg-cyan-600 w-full"><a href="">Regex Replacer</a></li>
-                        <li class="p-3 hover:bg-cyan-600 w-full"><a href="">Regex Finder</a></li>
-                        <li class="p-3 hover:bg-cyan-600 w-full"><a href="">Json Beautifier</a></li>
-                        <li class="p-3 hover:bg-cyan-600 w-full"><a href="">Binary Converter</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Regex Replacer</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Regex Finder</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Json Beautifier</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Binary Converter</a></li>
                     </ul>
                 </li>
                 <li class="w-full text-center border-b-2 border-blue-600 py-3
@@ -75,9 +84,9 @@
         </nav>
     </header>
     <main class="">
-        <section name="onboarding relaitve">
-            <div class="h-screen relaitve">
-                <video class="z-0 absolute top-0 left-0 w-full h-dvh object-cover z-0" muted autoplay loop
+        <section name="onboarding relative">
+            <div class="relative">
+                <video class="z-0 absolute top-0 left-0 w-full md:h-dvh object-cover z-0" muted autoplay loop
                     preload="auto">
                     <source src="assets/background/final.mp4" type="video/mp4">
                 </video>
@@ -85,8 +94,9 @@
                 <div class="absolute top-0 left-0 w-full h-full opacity-80 z-0
                             bg-gradient-to-r from-cyan-500 from-10% via-sky-500 via-30% to-blue-500 to-90%">
                 </div>
-                <div name="container-oboarding" class="container flex px-[15vw]">
-                    <div name="content-onboarding" class="pt-[150px] max-w-[55%] z-30 text-white font-roboto">
+                <div name="container-oboarding" class="flex flex-col-reverse md:flex-row px-[15vw]">
+                    <div name="content-onboarding"
+                        class="pt-12 md:pt-[150px] md:max-w-[60%] lg:max-w-[55%] z-30 text-white font-roboto">
                         <span class="bg-white p-2 mb-32 rounded text-blue-500 font-semibold text-sm relative
                         before:content-[''] before:absolute before:left-[15px] before:bottom-[-6px] before:z-[-1]
                         before:border-[20px] before:border-b-0 before:border-transparent before:border-t-white">
@@ -110,20 +120,21 @@
                             <button class="rounded bg-white text-blue-500 p-4 shadow-lg font-semibold">Hire Me! <i
                                     class="fa-solid fa-arrow-right"></i></button>
                         </div>
-                        <ul class="flex my-10 space-x-4">
+                        <ul class="flex pb-12 my-6 lg:my-10 space-x-4">
                             <li>+Linkedin</li>
                             <li>+Whatsapp</li>
                             <li>+Telegram</li>
                         </ul>
                     </div>
-                    <div name="right-img" class="relative min-h-dvh scale-x-[-1] pr-[10%] pt-[15vh]">
-                        <img class="sticky top-0 w-[30vw] object-contain" src="assets/personal/anjas nightcore2.png">
+                    <div name="right-img" class="relative scale-x-[-1] md:min-h-dvh pt-[10%] md:pr-[10%] md:pt-[15vh]">
+                        <img class="sticky top-0 left-[30%] object-contain w-[70%] md:w-[30vw]"
+                            src="assets/personal/anjas nightcore2.png">
                     </div>
                 </div>
             </div>
         </section>
         <section id="timeline"
-            class="relative bg-[url('assets/background/Dufan.jpg')] bg-top bg-center bg-no-repeat bg-cover bg-fixed">
+            class="pb-24 relative bg-[url('assets/background/Dufan.jpg')] bg-top bg-center bg-no-repeat bg-cover bg-fixed">
             <div class="absolute top-0 left-0 w-full overflow-x-clip rotate-[180deg] translate-y-[-100%]">
                 <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                     preserveAspectRatio="none">
@@ -154,42 +165,43 @@
             </div>
             <style type="text/tailwindcss">
                 .timeline-line{
-                @apply flex flex-col space-y-16 ml-32
-                after:absolute after:content-[''] after:w-[6px] after:top-[440px] after:bottom-[240px] after:ml-[30px]
-                after:bg-gradient-to-b after:from-red-500 after:via-pink-500 after:to-red-500;
-            }
-            .timeline-arrow{
-                @apply pl-16 relative before:content-[''] before:absolute before:border-[20px] before:border-l-0  before:border-transparent 
-                before:border-r-red-500 before:left-[50px] before:top-[100px] before:z-[0];
-            }
-            .timeline-circle-point{
-                @apply after:absolute after:content-[''] after:w-[25px] after:h-[25px] after:top-[108px] after:left-[21px] after:bg-white
-                after:border-4 after:border-solid after:border-red-600 after:rounded-full after:z-[20];
-            }
-            .working-period{
-                @apply absolute rotate-[270deg] top-[100px] left-[-130px] flex flex-col justify-center items-center  rounded-xl
+                    @apply md:flex flex-col space-y-16 md:ml-32
+                    after:hidden md:after:block md:after:absolute after:content-[''] after:w-[6px] 
+                    md:after:top-[400px] xl:after:top-[440px] md:after:bottom-[3%] lg:after:bottom-[3.3%] xl:after:bottom-[5.5%] min-[1400px]:after:bottom-[7.4%] after:ml-[30px]
+                    after:bg-gradient-to-b after:from-red-500 after:via-pink-500 after:to-red-500;
+                }
+                .timeline-arrow{
+                    @apply pl-16 relative before:content-[''] before:hidden md:before:block md:before:absolute before:border-[20px] before:border-l-0  before:border-transparent 
+                    before:border-r-red-500 before:left-[50px] before:top-[100px] before:z-[0];
+                }
+                .timeline-circle-point{
+                    @apply after:hidden md:after:block md:after:absolute after:content-[''] after:w-[25px] after:h-[25px] after:top-[108px] after:left-[21px] after:bg-white
+                    after:border-4 after:border-solid after:border-red-600 after:rounded-full after:z-[20];
+                }
+                .working-period{
+                    @apply absolute rotate-[270deg] top-[100px] left-[-70px] md:left-[-130px] flex flex-col justify-center items-center  rounded-xl
                         border-black text-[10px] font-semibold overflow-clip h-[50px] w-[100px] scale-[1.2] hover:scale-[1.8] z-[21] transition-all duration-500 shadow-lg
                         before:content-[''] before:w-[14px] before:h-[14px] before:bg-white before:rounded-full before:absolute before:left-[-7px]
                         after:content-[''] after:w-[14px] after:h-[14px] after:bg-white after:rounded-full after:absolute after:right-[-7px]
-            }
-            .timeline-card-head{
-                @apply container flex justify-center items-center bg-red-500 w-[85%] rounded-t-full;
-            }
-            .timeline-card-body{
-                @apply overflow-hidden rounded-b-xl bg-white w-[85%] drop-shadow-[10px_15px_10px_rgba(0,0,0,0.3)];
-            }
-            .company-preview {
-                @apply flex items-center rounded-lg;
-                .company-preview-relative{
-                    @apply relative;
                 }
-            }
-            ul.job-desc-list>li:nth-child(odd){
-                @apply bg-slate-300
-            }
-            ul.job-desc-list>li:nth-child(even){
-                @apply bg-slate-100
-            }
+                .timeline-card-head{
+                    @apply container flex justify-center items-center bg-red-500 w-[90%] md:w-[85%] ml-[5%] md:ml-0 rounded-t-full;
+                }
+                .timeline-card-body{
+                    @apply overflow-hidden rounded-b-xl bg-white w-[90%] md:w-[85%] ml-[5%] md:ml-0 drop-shadow-[10px_15px_10px_rgba(0,0,0,0.3)];
+                }
+                .company-preview {
+                    @apply hidden lg:flex items-center rounded-lg;
+                    .company-preview-relative{
+                        @apply relative;
+                    }
+                }
+                ul.job-desc-list>li:nth-child(odd){
+                    @apply bg-slate-300
+                }
+                ul.job-desc-list>li:nth-child(even){
+                    @apply bg-slate-100
+                }
             </style>
             <div class="timeline-line relative pt-40">
                 <h1
@@ -302,7 +314,7 @@
                     </div>
                 </div>
                 <div class="timeline-2 timeline-arrow timeline-circle-point">
-                    <div class="container relative flex justify-evenly">
+                    <div class="relative flex justify-evenly">
                         <div class="timeline-card relative">
                             <div class="working-period">
                                 <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
@@ -379,7 +391,7 @@
                     </div>
                 </div>
                 <div class="timeline-3 timeline-arrow timeline-circle-point">
-                    <div class="container relative flex justify-evenly max-w-[85%] min-[1340px]:mb-[-60px]">
+                    <div class="container relative flex justify-evenly lg:max-w-[85%] min-[1340px]:mb-[-60px]">
                         <div class="timeline-card relative">
                             <div class="working-period">
                                 <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
@@ -698,14 +710,14 @@
             <!-- SKILLS here -->
             <!-- SKILLS here -->
         </section>
-        <section id="education-slide-show" class="bg-gradient-to-r from-cyan-500 to-teal-500">
+        <section id="education-slide-show" class="bg-gradient-to-t from-emerald-400 via-teal-400 to-sky-500">
             <h2 class="font-soho text-center font-bold text-4xl pt-12 text-white  drop-shadow-lg">Educational Background
             </h2>
             <h4 class="font-soho text-center font-bold text-sm text-white drop-shadow-lg">Please Click Left/Right</h4>
-            <div class="container relative py-8">
-                <i id="edu-slide-left" class="fa-solid fa-chevron-left absolute top-[45%] left-[15%] w-16 h-16 cursor-pointer
+            <div class="relative py-16">
+                <i id="edu-slide-left" class="fa-solid fa-chevron-left absolute top-[250px] left-[15%] w-16 h-16 cursor-pointer
                             flex justify-center items-center bg-slate-300 rounded-full text-2xl"></i>
-                <i id="edu-slide-right" class="fa-solid fa-chevron-right absolute top-[45%] right-[15%] w-16 h-16 cursor-pointer
+                <i id="edu-slide-right" class="fa-solid fa-chevron-right absolute top-[250px] right-[15%] w-16 h-16 cursor-pointer
                             flex justify-center items-center bg-slate-300 rounded-full text-2xl"></i>
                 <style type="text/tailwindcss">
                     .education-slide-center {
@@ -783,14 +795,15 @@
             </div>
         </section>
         <section id="achievement" class="bg-teal-500 py-32">
-            <div class="grid grid-cols-4 px-32 gap-4">
-                <div class="col-span-2 h-full w-full text-white text-4xl font-bold">
+            <div
+                class="px-[8%] flex flex-col space-y-4 sm:space-y-0 sm:grid sm:gap-4 sm:grid-rows-none sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div class="col-span-2 h-full w-full text-white font-bold text-2xl sm:pr-16 md:text-4xl">
                     <div class="h-full w-full flex flex-col items-start justify-center">
                         <h2>TAKE A LOOK</h2>
                         <h2>AT MY ACHIEVEMENT AND</h2>
                         <h2>ORGANIZATION EXPERIENCE</h2>
                         </h2>
-                        <h3 class="text-xl pt-4">
+                        <h3 class="text-[1.1rem] pt-2 text-justify md:text-xl md:pt-4">
                             There are some of my achievements and organizational involvements during my study at
                             university
                         </h3>
@@ -798,7 +811,7 @@
                 </div>
                 <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
                     <div class="h-full flex flex-col justify-center items-between">
-                        <img src="assets/achievement-org/juara_2_nasional.jpg">
+                        <img class="h-[70%] object-cover object-top" src="assets/achievement-org/juara_2_nasional.jpg">
                         <div
                             class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
                             <h2>2nd Place - National</h2>
@@ -809,7 +822,7 @@
                 </div>
                 <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
                     <div class="h-full flex flex-col justify-center items-between">
-                        <img src="assets/achievement-org/juara_3_regional.jpg">
+                        <img class="h-[70%] object-cover object-top" src="assets/achievement-org/juara_3_regional.jpg">
                         <div
                             class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
                             <h2>3rd Place -Regional</h2>
@@ -820,7 +833,8 @@
                 </div>
                 <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
                     <div class="h-full flex flex-col justify-center items-between">
-                        <img src="assets/achievement-org/best_design_nasional.jpg">
+                        <img class="h-[70%] object-cover object-top"
+                            src="assets/achievement-org/best_design_nasional.jpg">
                         <div
                             class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
                             <h2>Best Design - National</h2>
@@ -830,9 +844,9 @@
                     </div>
                 </div>
                 <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
-                    <div class="h-full flex flex-col justify-center items-between">
-                        <div class="relative">
-                            <img src="assets/achievement-org/software_developer.jpeg">
+                    <div class="h-full flex flex-col justify-center">
+                        <div
+                            class="relative h-[45rem] bg-[url('assets/achievement-org/software_developer.jpeg')] bg-cover bg-no-repeat">
                             <img class="absolute top-4 left-4 w-16" src="assets/achievement-org/c_plus_logo.png">
                         </div>
                         <div
@@ -843,20 +857,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
+                <div
+                    class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden lg:col-span-2 lg:w-[70%] lg:ml-20 xl:ml-0 xl:col-span-1 xl:w-full">
                     <div class="h-full flex flex-col justify-center items-between">
-                        <img class="h-[200px] object-cover" src="assets/achievement-org/lab_402.jpg">
+                        <img class="h-[67%] object-fit object-top" class="h-[200px] object-cover"
+                            src="assets/achievement-org/lab_402.jpg">
                         <div
-                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter text-md font-bold text-white">
                             <h2>Chief of Laboratory Assistant</h2>
-                            <h2>Industrial Electronics Laboratory ITS</h2>
+                            <h2>Industrial Electronics <span class="sm:hidden md:inline xl:hidden">Laboratory ITS</span>
+                            </h2>
+                            <h2 class="hidden sm:block md:hidden xl:block">Laboratory ITS</h2>
                             <h2>2018-2019</h2>
                         </div>
                     </div>
                 </div>
                 <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
                     <div class="h-full flex flex-col justify-center items-between">
-                        <img class="h-[200px] object-cover" src="assets/achievement-org/baduy.jpg">
+                        <img class="h-[70%] object-cover object-top" src="assets/achievement-org/baduy.jpg">
                         <div
                             class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
                             <h2>Head of Social and Community</h2>
@@ -890,14 +908,14 @@
     </main>
     <footer>
         <section id="contact-me"
-            class="relative bg-[url('assets/background/stacked-peaks-haikei.png')] bg-no-repeat bg-cover">
-            <div class="container py-16">
-                <h1 class="text-center text-3xl pb-2 font-leckerli drop-shadow-3xl">Send Me a Message!</h1>
+            class="relative bg-[url('assets/background/stacked-peaks-haikei.png')] bg-no-repeat bg-cover z-[-1]">
+            <div class="py-16 mx-[8%]">
+                <h1 class="text-center text-3xl pb-2 font-leckerli drop-shadow-3xl">Send Us a Message!</h1>
                 <h2 class="text-center pb-12 font-semibold font-inter italic drop-shadow-3xl">
                     Feel free to reach me out whenever you need my expertise!
                 </h2>
-                <div class="flex items-center justify-center mx-auto px-4">
-                    <div class="thumnbails pr-32 w-[40%]">
+                <div class="md:flex items-center justify-center mx-auto md:space-x-16 space-y-16 md:space-y-0">
+                    <div class="thumnbails xl:w-[40%]">
                         <h2 class="text-3xl font-bold">If not now, when?</h2>
                         <h2 class="text-3xl font-bold">
                             Let’s Connect and Collaborate!
@@ -906,24 +924,24 @@
                             Are you looking for a dedicated professional who combines technical expertise, innovative
                             thinking, and a passion for excellence? I am here to help you achieve your goals with
                             confidence and precision. With a strong foundation in IT industries, years of experience
-                            tackling diverse challenges, and a proven ability to deliver
-                            impactful results, I am ready to contribute to your organization’s success.
+                            tackling diverse challenges, and a proven ability to deliver impactful results, I am ready
+                            to contribute to your organization’s success.
                         </p>
                         <div class="pt-6">
                             <img class="w-40" src="assets/ttd2.png" alt="" srcset="">
                             <h4 class="font-leckerli">Anjas Muhammad Bangun</h4>
                         </div>
                     </div>
-                    <div class="">
-                        <h1 class="text-center font-inter font-semibold pb-4">Please Fill Out This Form</h1>
-                        <form id="msg-form" class="flex flex-col space-y-4" action="">
+                    <div class="md:w-[50%]">
+                        <h1 class="text-center font-inter font-bold text-xl pb-4">Please Fill Out This Form</h1>
+                        <form id="msg-form" class="flex flex-col space-y-4 w-full" action="">
                             <input id="msgName" class="h-10 px-4" type="text" placeholder="Your Name">
                             <input id="msgEmail" class="h-10 px-4" type="text" placeholder="Your E-mail">
                             <input id="msgPhone" class="h-10 px-4" type="text" placeholder="Your Phone Number">
                             <input id="msgSubject" class="h-10 px-4" type="text" placeholder="Subject">
                             <textarea id="msgTxt" class="px-4 pt-2 h-40" form="msg-form"
                                 placeholder="Message"></textarea>
-                            <div class="flex space-x-4 text-white font-semibold">
+                            <div class="flex justify-center space-x-16 text-white font-semibold">
                                 <button id="btnSendWA" class="w-48 h-12 bg-blue-600" type="button">
                                     Send to Whatsapp
                                 </button>
@@ -935,36 +953,41 @@
                 </div>
             </div>
         </section>
-        <section id="">
-            <div class="flex justify-evenly items-start p-16 bg-slate-200">
+        <section id="footer-info" class="">
+            <div class="flex flex-col space-y-12 items-center py-16 bg-slate-200
+                        md:flex-row md:justify-evenly md:items-start md:px-0 md:space-y-0">
                 <div id="contacts">
                     <h2 class="text-center text-3xl font-semibold font-inter border-b-4 border-black">Contacts</h2>
-                    <div class="flex flex-col justify-center font-inter text-md font-semibold space-y-2 pt-4">
-                        <h3 class="font-inter text-md font-semibold"><i class="fa-solid fa-location-dot"></i> Jakarta,
-                            Indonesia
+                    <div class="flex flex-col justify-center font-inter text-sm font-semibold space-y-2 pt-4">
+                        <h3 class="text-center md:text-left font-inter text-md font-semibold">
+                            <i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia
                         </h3>
-                        <a
-                            href="mailto:anjasmuhamadb123@gmail.com?subject=HR Recruitment&body=Hi,I found this website and want to hire you!"><i
-                                class="fa-solid fa-envelope"></i> anjasmuhamadb123@gmail.com</a>
-                        <a href="https://www.linkedin.com/in/anjasmbe/"><i class="fa-brands fa-linkedin"></i>
-                            linkedin.com/in/anjasmbe/</a>
-                        <a
-                            href="https://api.whatsapp.com/send/?phone=6281901777719&text=Hi,I found this website and want to hire you!&type=phone_number&app_absent=0"><i
-                                class="fa-brands fa-whatsapp"></i> 081901777719</a>
-                        <a href="https://t.me/ambbbme"><i class="fa-brands fa-telegram"></i> @ambbme</a>
+                        <a class="text-center md:text-left"
+                            href="mailto:anjasmuhamadb123@gmail.com?subject=HR Recruitment&body=Hi,I found this website and want to hire you!">
+                            <i class="fa-solid fa-envelope"></i> anjasmuhamadb123@gmail.com
+                        </a>
+                        <a class="text-center md:text-left" href="https://www.linkedin.com/in/anjasmbe/">
+                            <i class="fa-brands fa-linkedin"></i> linkedin.com/in/anjasmbe/
+                        </a>
+                        <a class="text-center md:text-left"
+                            href="https://api.whatsapp.com/send/?phone=6281901777719&text=Hi,I found this website and want to hire you!&type=phone_number&app_absent=0">
+                            <i class="fa-brands fa-whatsapp"></i> 081901777719
+                        </a>
+                        <a class="text-center md:text-left" href="https://t.me/ambbbme">
+                            <i class="fa-brands fa-telegram"></i> @ambbme
+                        </a>
                     </div>
                 </div>
-                <div class="w-[30%]">
-                    <img class="w-64 mx-auto pb-4" src="assets/logo/box_transparent.png">
+                <div class="md:w-[30%]">
+                    <img class="w-32 mx-auto pb-4" src="assets/logo/box_transparent.png">
                     <h2 class="text-2xl font-inter text-center">5+ Years experience in IT Induestires</h2>
                     <h2 class="text-md font-inter text-center pt-4">A professional Software Quality Assurance
-                        Specialist, Software
-                        Engineer, and Electrical Engineer
+                        Specialist, Software Engineer, and Electrical Engineer
                     </h2>
                 </div>
-                <div class="w-[25%]">
-                    <h1 class="text-center font-inter font-semibold text-3xl border-b-4 border-black">Services</h1>
-                    <div class="grid grid-cols-2 items-center font-inter pt-4">
+                <div class="md:w-[30%]">
+                    <h1 class="text-center font-inter font-semibold text-3xl border-b-4 border-black">Keywords</h1>
+                    <div class="grid grid-cols-2 gap-x-10 items-center font-inter pt-4">
                         <h2>Quality Architect</h2>
                         <h2>Software Developer Engineer in Test</h2>
                         <h2>Quality Engineer</h2>
