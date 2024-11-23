@@ -14,6 +14,14 @@ function removeClass(element, className) {
     element.classList.remove(className)
 }
 
+function goToUrl(url){
+    window.location.assign(url)
+}
+
+function openUrl(url){
+    window.open(url)
+}
+
 // ========================== Start of Top Navbar ==========================
 const topNavbar = document.querySelector('#top-navbar');
 const subNavbars = document.querySelectorAll('.sub-navbar')
