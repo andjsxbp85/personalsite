@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjas Muhammad Bangun</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="app.css">
+    <meta name="description" content="Anjas Muhammad Bangun">
+    <meta name="keywords" content="Anjas Muhammad Bangun">
+    <meta name="author" content="Anjas Muhammad Bangun">
+    <link rel="icon" type="image/x-icon" href="/assets/logo/icon.png">
+</head>
+
+<body class="bg-slate-200">
+    <header class="w-full mx-auto p-0">
+        <style type="text/tailwindcss">
+            #top-navbar.active {
+              @apply shadow-xl overflow-hidden bg-cyan-500;
+            }
+            .sub-navbar.active {
+                & .sub-navbar-items{
+                    @apply md:fixed md:pt-5 md:bg-cyan-500 md:flex md:flex-col md:items-start md:bg-clip-content md:rounded-b-xl md:shadow-xl overflow-hidden;
+                }
+            }
+            .sub-navbar.mobile-active {
+                & .sub-navbar-items{
+                    @apply pt-5 flex flex-col items-start overflow-hidden;
+                }
+            }
+        </style>
+        <nav id="top-navbar" class="fixed top-5 right-2 py-3 bg-cyan-500 rounded-xl transition-all duration-700 font-medium font-soho font-extrabold text-white z-50
+         md:top-0 md:left-0 md:w-full md:px-4 md:bg-transparent md:hover:bg-cyan-500 md:rounded-none">
+            <div class="relative md:hidden">
+                <i id="toggle-navbar" class="fa-sharp fa-solid fa-bars text-right w-full p-6"></i>
+                <i id="close-navbar"
+                    class="fa-solid fa-xmark text-right w-full text-white absolute top-[-5px] right-[10px] hidden"></i>
+            </div>
+            <ul id="list-navbar" class="flex flex-col items-center px-4 space-y-2 w-[200px] transition-all duration-700 hidden
+                         md:flex md:flex-row md:justify-between md:items-center md:space-y-0 md:w-full">
+                <li class="flex w-full md:w-auto justify-between items-center">
+                    <img class="flex mx-auto h-7 lg:h-10" src="assets/logo/panjang_transparent.png" alt="">
+                </li>
+                <li class="lg:w-40 xl:w-96"><a href=""></a></li>
+                <li class="w-full text-center border-b-2 border-blue-600 py-3
+                md:py-0 md:border-none md:w-auto"><a href="">Home</a>
+                </li>
+                <li class="w-full text-center border-b-2 border-blue-600 py-3
+                md:py-0 md:border-none md:w-auto"><a href="">About</a>
+                </li>
+                <li class="sub-navbar w-full text-center py-3 
+                            md:border-b-2 md:border-blue-600 md:py-0 md:border-none md:w-auto">
+                    Web Tools&nbsp;
+                    <i class="fa-solid fa-angle-down"></i>
+                    <ul class="sub-navbar-items hidden">
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Regex Replacer</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Regex Finder</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Json Beautifier</a></li>
+                        <li class="p-3 md:hover:bg-cyan-600 w-full"><a href="">Binary Converter</a></li>
+                    </ul>
+                </li>
+                <li class="w-full text-center border-b-2 border-blue-600 py-3
+                md:py-0 md:border-none md:w-auto"><a href="">Blog</a>
+                </li>
+                <li class="w-full text-center border-b-2 border-blue-600 py-3
+                md:py-0 md:border-none md:w-auto"><a href="#contacts">Contact</a></li>
+                <ul
+                    class="w-full text-center flex flex-col justify-center items-center pt-4 space-y-4 md:space-y-0 md:space-x-4 md:flex-row md:py-0 md:w-auto">
+                    <li
+                        class="p-2 lg:p-3 rounded-br-3xl rounded-tl-3xl bg-teal-600 hover:bg-green-500 hover:ring-orange-500 transition-all duration-500">
+                        <a href="https://www.linkedin.com/in/anjasmbe/" target="_blank">Hire Me</a>
+                    </li>
+                    <li
+                        class="p-2 lg:p-3 rounded-br-3xl rounded-tl-3xl bg-teal-600 hover:bg-green-500 hover:ring-orange-500 transition-all duration-500">
+                        <a
+                            href="mailto:anjasmuhamadb123@gmail.com?subject=HR Recruitment&body=Hi,I found this website and want to hire you!">Send
+                            Email</a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+    <main class="">
+        <section name="onboarding relative">
+            <div class="relative">
+                <video class="z-0 absolute top-0 left-0 w-full md:h-dvh object-cover z-0" muted autoplay loop
+                    preload="auto">
+                    <source src="assets/background/final.mp4" type="video/mp4">
+                </video>
+                <!-- Kasih penutup box biar agak gelap videonya -->
+                <div class="absolute top-0 left-0 w-full h-full opacity-80 z-0
+                            bg-gradient-to-r from-cyan-500 from-10% via-sky-500 via-30% to-blue-500 to-90%">
+                </div>
+                <div name="container-oboarding" class="flex flex-col-reverse md:flex-row px-[15vw]">
+                    <div name="content-onboarding"
+                        class="pt-12 md:pt-[150px] md:max-w-[60%] lg:max-w-[55%] z-30 text-white font-roboto">
+                        <span class="bg-white p-2 mb-32 rounded text-blue-500 font-semibold text-sm relative
+                        before:content-[''] before:absolute before:left-[15px] before:bottom-[-6px] before:z-[-1]
+                        before:border-[20px] before:border-b-0 before:border-transparent before:border-t-white">
+                            Hi There!
+                        </span>
+                        <h1 class="pt-4 text-4xl drop-shadow-lg">I am Anjas Muhammad Bangun</h1>
+                        <p href="https://git.io/typing-svg" class="drop-shadow-lg pt-4"><img
+                                src="https://readme-typing-svg.demolab.com?font=Roboto&size=35&pause=600&color=FFFFFF&width=460&height=60&lines=I+am+Software+Engineer;Love+to+learn+anything+new;Experienced+in+software+test;More+than+5+years+experience"
+                                alt="Typing SVG" />
+                        </p>
+                        <!-- <h2 class="text-4xl py-4 drop-shadow-lg">I am Software Engineer</h2> -->
+                        <p class="text-justify drop-shadow-lg">As a professional in IT industries, I have accumulated
+                            over 5 years of experience. This extensive experience has allowed me to develop a diverse
+                            set of skills, both technical and interpersonal. Get to know me better on this site!
+                        </p>
+                        <div class="mt-8 flex space-x-4 text-sm">
+                            <button class="rounded bg-blue-500 p-4 shadow-lg font-semibold"
+                                onclick="openUrl('assets/doc/CV_ANJAS_MUHAMMAD_BANGUN.pdf')">Download CV <i
+                                    class="fa-solid fa-cloud-arrow-down"></i></button>
+                            <button class="rounded bg-sky-500 p-4 shadow-lg font-semibold"
+                                onclick="goToUrl('#timeline')">View Portofolio <i
+                                    class="fa-solid fa-address-card"></i></button>
+                            <button class="rounded bg-white text-blue-500 p-4 shadow-lg font-semibold"
+                                onclick="openUrl('https://www.linkedin.com/in/anjasmbe/')">Hire Me! <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                        <ul class="flex pb-12 my-6 lg:my-10 space-x-4">
+                            <li>
+                                <a href="http://www.linkedin.com/in/anjasmbe/" target="_blank"
+                                    rel="noopener noreferrer">+Linkedin
+                                </a>
+                            </li>
+                            <li>
+                                <a href="http://wa.me/6281901777719" target="_blank" rel="noopener noreferrer">+Whatsapp
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/ambbbme" target="_blank" rel="noopener noreferrer">+Telegram
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div name="right-img" class="relative scale-x-[-1] md:min-h-dvh pt-[10%] md:pr-[10%] md:pt-[15vh]">
+                        <img class="sticky top-0 left-[30%] object-contain w-[70%] md:w-[30vw]"
+                            src="assets/personal/anjas nightcore2.png">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="timeline"
+            class="pb-24 relative bg-[url('assets/background/Dufan.jpg')] bg-top bg-center bg-no-repeat bg-cover bg-fixed">
+            <div class="absolute top-0 left-0 w-full overflow-x-clip rotate-[180deg] translate-y-[-100%]">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill fill-sky-500"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill fill-sky-500"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill fill-cyan-300"></path>
+                </svg>
+            </div>
+            <div class="absolute top-0 left-0 w-full overflow-x-clip">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                    preserveAspectRatio="none">
+                    <path
+                        d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                        opacity=".25" class="shape-fill fill-sky-500"></path>
+                    <path
+                        d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                        opacity=".5" class="shape-fill fill-sky-500"></path>
+                    <path
+                        d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                        class="shape-fill fill-cyan-400"></path>
+                </svg>
+            </div>
+            <style type="text/tailwindcss">
+                .timeline-line{
+                    @apply md:flex flex-col space-y-16 md:ml-32
+                    after:hidden md:after:block md:after:absolute after:content-[''] after:w-[6px] 
+                    md:after:top-[400px] xl:after:top-[440px] md:after:bottom-[3%] lg:after:bottom-[3.3%] xl:after:bottom-[5.5%] min-[1400px]:after:bottom-[7.4%] after:ml-[30px]
+                    after:bg-gradient-to-b after:from-red-500 after:via-pink-500 after:to-red-500;
+                }
+                .timeline-arrow{
+                    @apply pl-16 relative before:content-[''] before:hidden md:before:block md:before:absolute before:border-[20px] before:border-l-0  before:border-transparent 
+                    before:border-r-red-500 before:left-[50px] before:top-[100px] before:z-[0];
+                }
+                .timeline-circle-point{
+                    @apply after:hidden md:after:block md:after:absolute after:content-[''] after:w-[25px] after:h-[25px] after:top-[108px] after:left-[21px] after:bg-white
+                    after:border-4 after:border-solid after:border-red-600 after:rounded-full after:z-[20];
+                }
+                .working-period{
+                    @apply absolute rotate-[270deg] top-[100px] left-[-70px] md:left-[-130px] flex flex-col justify-center items-center  rounded-xl
+                        border-black text-[10px] font-semibold overflow-clip h-[50px] w-[100px] scale-[1.2] hover:scale-[1.8] z-[21] transition-all duration-500 shadow-lg
+                        before:content-[''] before:w-[14px] before:h-[14px] before:bg-white before:rounded-full before:absolute before:left-[-7px]
+                        after:content-[''] after:w-[14px] after:h-[14px] after:bg-white after:rounded-full after:absolute after:right-[-7px]
+                }
+                .timeline-card-head{
+                    @apply container flex justify-center items-center bg-red-500 w-[90%] md:w-[85%] ml-[5%] md:ml-0 rounded-t-full;
+                }
+                .timeline-card-body{
+                    @apply overflow-hidden rounded-b-xl bg-white w-[90%] md:w-[85%] ml-[5%] md:ml-0 drop-shadow-[10px_15px_10px_rgba(0,0,0,0.3)];
+                }
+                .company-preview {
+                    @apply hidden lg:flex items-center rounded-lg;
+                    .company-preview-relative{
+                        @apply relative;
+                    }
+                }
+                ul.job-desc-list>li:nth-child(odd){
+                    @apply bg-slate-300
+                }
+                ul.job-desc-list>li:nth-child(even){
+                    @apply bg-slate-100
+                }
+            </style>
+            <div class="timeline-line relative pt-40">
+                <h1
+                    class="text-center font-inter text-[4em] font-semibold bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-violet-800 drop-shadow-2xl">
+                    Working Experience
+                </h1>
+                <div class="timeline-1 timeline-arrow timeline-circle-point">
+                    <div class="container relative flex justify-evenly">
+                        <div class="timeline-card relative">
+                            <div class="working-period">
+                                <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
+                                <div class="w-full text-center bg-rose-500"><span>Februari 2022</span></div>
+                                <div class="w-full text-center bg-rose-400"><span>Present</span></div>
+                            </div>
+                            <div id="head-timeline-1" class="timeline-card-head">
+                                <div
+                                    class="px-[6%] flex flex-col justify-center items-center font-semibold text-sm lg:text-2xl">
+                                    <h1><i class="fa-solid fa-circle-arrow-left"></i> Govtech Edu <i
+                                            class="fa-solid fa-circle-arrow-right"></i></h1>
+                                    <div class="w-full border-t-4 border-dashed border-slate-100"></div>
+                                    <h2>Software Engineer - QA Core</h2>
+                                </div>
+                            </div>
+                            <article class="timeline-card-body">
+                                <ul class="job-desc-list">
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Achieving highest level of employee work performance (98 out of 100 points)
+                                            in 2022 period
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Successfully creating automation web test using visual test that build from
+                                            scratch with native Java (no need external dependency) and test script at
+                                            assertion section, so the test script is simpler and easier
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Building remote driver environment using Selenoid docker that run on vm,
+                                            making user
+                                            easier to run automation test
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check pt-[6px]"></i>
+                                        <p>Developing auto test case generator that using AI technology that can
+                                            integrated with
+                                            Jira ticket
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Constructing Gitlab CI/CD pipeline for automation tools that used by all
+                                            tester in
+                                            GovTech (from microservice untill core)
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Developing performance test tools framework and structure using K6 with high
+                                            specification that can run in distributed machine and generate its report in
+                                            html
+                                            form and send it to slack notification
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Integrating Xray Cloud plugin in Jira with all automation tools platform
+                                            (web, api,
+                                            desktop, performance, android)
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Develop and maintain automation test orchestration including automation test
+                                            CI/CD,
+                                            test reporting, and automation test metrics management
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Actively Collaborate with QA Managers and Product Engineers in defining
+                                            automation
+                                            test solutions or test strategies
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="company-preview flex items-center pr-32">
+                            <div class="company-preview-relative w-[80%]">
+                                <img class="object-contain h-full rounded-xl drop-shadow-[10px_15px_10px_rgba(65,143,216,0.6)]"
+                                    src="assets/timeline-exp/govtech_app.png" alt="">
+                                <div class="top-[30%] right-[-30%] p-2 w-[50%] h-[50%] rounded-xl flex justify-center items-end
+                                        drop-shadow-[5px_5px_10px_rgba(65,143,216,0.7)]
+                                        bg-[url('assets/timeline-exp/govtech_logo.png')] bg-[center_top_0.5rem] bg-[length:75%]
+                                        bg-no-repeat absolute bg-gray-100
+                                        hover:scale-[1.1] hover:ring-3 hover:ring-sky-500 transition-all duration-500">
+                                    <button
+                                        class="py-1 px-3 pt-full font-leckerli text-white rounded-lg bg-blue-500 ring-2 ring-sky-500
+                                            sm:text-[40%] lg:text-[85%] hover:scale-[1.1] hover:ring-3 transition-all duration-500">
+                                        Check Site
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-2 timeline-arrow timeline-circle-point">
+                    <div class="relative flex justify-evenly">
+                        <div class="timeline-card relative">
+                            <div class="working-period">
+                                <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
+                                <div class="w-full text-center bg-rose-500"><span>September 2021</span></div>
+                                <div class="w-full text-center bg-rose-400"><span>Januari 2022</span></div>
+                            </div>
+                            <div id="head-timeline-1" class="timeline-card-head">
+                                <div
+                                    class="px-[6%] flex flex-col justify-center items-center font-semibold text-sm lg:text-2xl">
+                                    <h1><i class="fa-solid fa-circle-arrow-right"></i> Tokopedia <i
+                                            class="fa-solid fa-circle-arrow-left"></i></h1>
+                                    <div class="w-full border-t-4 border-dashed border-slate-100"></div>
+                                    <h2>Senior SDET (EP) - Shop Core</h2>
+                                </div>
+                            </div>
+                            <article class="timeline-card-body">
+                                <ul class="job-desc-list">
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Finishing 208 automated test cases just only in 2 months and achieving all Q4
+                                            goals
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Support Planning of test schedules in accordance with project scope/delivery
+                                            dates and ensure that the timelines are adhered to without fail
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Maintaining and improving automation test using Katalon (groovy) for desktop,
+                                            lite, and android platform (both Seller Apps and Main Apps), while swift for
+                                            iOS and hummertime (golang) for load test in Shop Core team
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check pt-[6px]"></i>
+                                        <p>
+                                            Supervising SDLC process on several modular projects
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Participating in user story reviews to provide input on functional
+                                            requirements, Acceptance Criteria, schedules, or potential problems
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Being meticulous about documentation and maintaining a robust log of all test
+                                            cases and test results
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="company-preview flex items-center">
+                            <div class="company-preview-relative w-[80%]">
+                                <img class="object-contain h-full rounded-xl drop-shadow-[10px_15px_10px_rgba(40,194,102,0.6)]"
+                                    src="assets/timeline-exp/tokopedia_app.png" alt="">
+                                <div class="absolute top-[-65%] left-[20%] p-2 w-[50%] h-[85%] rounded-xl flex justify-center items-end
+                                        drop-shadow-[5px_5px_10px_rgba(40,194,102,0.6)] bg-no-repeat bg-gray-100 bg-[length:60%]
+                                        bg-[url('assets/timeline-exp/tokopedia_logo.png')] bg-[center_top_0.5rem] 
+                                        hover:scale-[1.1] hover:ring-3 hover:ring-sky-500 transition-all duration-500">
+                                    <button
+                                        class="py-1 px-3 pt-full font-leckerli text-white rounded-lg bg-green-600 ring-2 ring-green-500
+                                            sm:text-[40%] lg:text-[85%] hover:scale-[1.1] hover:ring-3 transition-all duration-500">
+                                        Check Site
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-3 timeline-arrow timeline-circle-point">
+                    <div class="container relative flex justify-evenly lg:max-w-[85%] min-[1340px]:mb-[-60px]">
+                        <div class="timeline-card relative">
+                            <div class="working-period">
+                                <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
+                                <div class="w-full text-center bg-rose-500"><span>Oktober 2020</span></div>
+                                <div class="w-full text-center bg-rose-400"><span>September 2021</span></div>
+                            </div>
+                            <div id="head-timeline-1" class="timeline-card-head">
+                                <div
+                                    class="px-[6%] flex flex-col justify-center items-center font-semibold text-sm lg:text-2xl">
+                                    <h1><i class="fa-solid fa-circle-arrow-right"></i> Flip Id <i
+                                            class="fa-solid fa-circle-arrow-left"></i></h1>
+                                    <div class="w-full border-t-4 border-dashed border-slate-100"></div>
+                                    <h2>Quality Assurance - Core Integration</h2>
+                                </div>
+                            </div>
+                            <article class="timeline-card-body">
+                                <ul class="job-desc-list">
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Appointed as a company delegation to be a speaker at an event organized by
+                                            ISQA (biggest Quality Assurance community in Indonesia)
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Carrying out connectivity and partnerships between Flip.id and third parties
+                                            and ensuring Flip.id upstream system can run well according to documents and
+                                            cooperation agreements
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Building automation test construction from scratch with team
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check pt-[6px]"></i>
+                                        <p>
+                                            Doing both manual and automation test in Javascript based frame work (mocha,
+                                            chai, axios, appium, etc) integrated with Gitlab CI/CD pipeline
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Helping Junior Test Engineer by providing mentorship or code review
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Helping and designing test automation framework based on past experience and
+                                            demand of the current project
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="company-preview flex items-center pr-32">
+                            <div class="company-preview-relative min-[1340px]:top-[-20%] min-[1340px]:mb-[-5%]">
+                                <img class="object-contain h-full rounded-xl drop-shadow-[10px_15px_10px_rgba(255,99,71,0.6)]"
+                                    src="assets/timeline-exp/flip_app.png" alt="">
+                                <div class="top-[20%] right-[-60%] p-3 min-w-[120%] md:min-w-[75%] scale-[0.6] md:scale-[1] h-[20%] md:h-[110px] lg:h-[40%] rounded-xl flex justify-center items-end
+                                        drop-shadow-[5px_5px_10px_rgba(255,99,71,0.6)]
+                                        bg-[url('assets/timeline-exp/flip_logo.png')] bg-[center_top_0.8rem] sm:bg-[length:40%] md:bg-[length:55%]
+                                        bg-no-repeat absolute bg-gray-100
+                                        hover:scale-[1.1] hover:ring-3 hover:ring-sky-500 transition-all duration-500">
+                                    <button
+                                        class="p-1 md:px-3 pt-full font-leckerli text-white rounded-lg bg-orange-500 ring-2 ring-orange-500
+                                            text-[60%] lg:text-[85%] hover:scale-[1.1] hover:ring-3 transition-all duration-500">
+                                        Check Site
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-4 timeline-arrow timeline-circle-point">
+                    <div class="container relative flex justify-evenly">
+                        <div class="timeline-card relative">
+                            <div class="working-period">
+                                <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
+                                <div class="w-full text-center bg-rose-500"><span>Oktober 2019</span></div>
+                                <div class="w-full text-center bg-rose-400"><span>Oktober 2020</span></div>
+                            </div>
+                            <div id="head-timeline-1" class="timeline-card-head">
+                                <div
+                                    class="px-[6%] flex flex-col justify-center items-center font-semibold text-sm lg:text-2xl">
+                                    <h1><i class="fa-solid fa-circle-arrow-right"></i> Alterra <i
+                                            class="fa-solid fa-circle-arrow-left"></i></h1>
+                                    <div class="w-full border-t-4 border-dashed border-slate-100"></div>
+                                    <h2>Software Developer Engineer in Test</h2>
+                                </div>
+                            </div>
+                            <article class="timeline-card-body">
+                                <ul class="job-desc-list">
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Ensuring software to be produced is free from defects, bugs, and meets the
+                                            team's agreement and UAT
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Holding sharing session class as speaker about “Automation Using CSS Selector
+                                            and Its Relationship Between QE and SE”
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Helping the team to integrate management of main business processes mediated
+                                            by Odoo as software (serveing internal needs either from accountants,
+                                            employees, until HR)
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check pt-[6px]"></i>
+                                        <p>
+                                            Actively participate in walk-through, inspection, review and user group
+                                            meetings for quality assurance
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Influence other division & teams about quality mindset to foster
+                                            collaboration in building high quality products
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Developing automation tools using some high end tools like Selenium Java,
+                                            Jenkins, Postman, Junit, Jbehave, Cucumber Gherkin, Testlink, Rest assured,
+                                            etc.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="company-preview flex items-center pr-32">
+                            <div class="company-preview-relative w-[80%]">
+                                <img class="object-contain h-full rounded-xl drop-shadow-[10px_15px_10px_rgba(40,194,102,0.6)]"
+                                    src="assets/timeline-exp/alterra_app.png" alt="">
+                                <div class="top-[30%] p-2 absolute flex flex-col items-center bg-gray-100 right-[-100px] 
+                                        hover:scale-[1.1] hover:ring-3 hover:ring-sky-500 transition-all duration-500
+                                        rounded-xl drop-shadow-[5px_5px_10px_rgba(40,194,102,0.6)]">
+                                    <img class="object-contain p-4 w-[150px]" src="assets/timeline-exp/alterra_logo.png"
+                                        alt="">
+                                    <button class="py-1 px-3 font-leckerli text-white rounded-lg bg-green-600 ring-2 ring-lime-500
+                                            hover:scale-[1.1] hover:ring-3 transition-all duration-500">
+                                        Check Site
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-5 timeline-arrow timeline-circle-point]">
+                    <div class="container relative flex justify-evenly">
+                        <div class="timeline-card relative">
+                            <div class="working-period">
+                                <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
+                                <div class="w-full text-center bg-rose-500"><span>Juli 2019</span></div>
+                                <div class="w-full text-center bg-rose-400"><span>September 2019</span></div>
+                            </div>
+                            <div id="head-timeline-1" class="timeline-card-head">
+                                <div
+                                    class="px-[6%] flex flex-col justify-center items-center font-semibold text-sm lg:text-2xl">
+                                    <h1><i class="fa-solid fa-circle-arrow-right"></i> Alterra Academy <i
+                                            class="fa-solid fa-circle-arrow-left"></i></h1>
+                                    <div class="w-full border-t-4 border-dashed border-slate-100"></div>
+                                    <h2>Software Developer Engineer in Test</h2>
+                                </div>
+                            </div>
+                            <article class="timeline-card-body">
+                                <ul class="job-desc-list">
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Got first place in class during first assessment period
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Getting a lot of knowledge and new experience, learning some techniques in
+                                            maintaining software quality and also how to work in team
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Complete the final project task by creating automation tests for all
+                                            platforms, including API, web, and Android, related to software at Alterra
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Training sessions for developing soft skills and hard skills related to job
+                                            readiness.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="company-preview flex items-center pr-32 w-[50%]">
+                            <div class="company-preview-relative top-[-40px]">
+                                <img class="object-contain h-full rounded-xl drop-shadow-[10px_15px_10px_rgba(40,194,102,0.6)]"
+                                    src="assets/timeline-exp/alterra_academy_app.png" alt="">
+                                <div class="top-[30%] p-2 absolute flex flex-col items-center bg-gray-100 right-[-100px] 
+                                        hover:scale-[1.1] hover:ring-3 hover:ring-sky-500 transition-all duration-500
+                                        rounded-xl drop-shadow-[5px_5px_10px_rgba(40,194,102,0.6)]">
+                                    <img class="object-contain p-4 w-[150px]"
+                                        src="assets/timeline-exp/alterra_academy_logo.png" alt="">
+                                    <button class="py-1 px-3 font-leckerli text-white rounded-lg bg-green-600 ring-2 ring-lime-500
+                                            hover:scale-[1.1] hover:ring-3 transition-all duration-500">
+                                        Check Site
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-6 timeline-arrow timeline-circle-point">
+                    <div class="container relative flex justify-evenly">
+                        <div class="timeline-card relative">
+                            <div class="working-period">
+                                <div class="w-full text-center bg-rose-600 text-white"><span>Working Period</span></div>
+                                <div class="w-full text-center bg-rose-500"><span>Juli 2018</span></div>
+                                <div class="w-full text-center bg-rose-400"><span>Agustus 2018</span></div>
+                            </div>
+                            <div id="head-timeline-1" class="timeline-card-head">
+                                <div
+                                    class="px-[6%] flex flex-col justify-center items-center font-semibold text-sm lg:text-2xl">
+                                    <h1><i class="fa-solid fa-circle-arrow-right"></i> PT Latinusa <i
+                                            class="fa-solid fa-circle-arrow-left"></i></h1>
+                                    <div class="w-full border-t-4 border-dashed border-slate-100"></div>
+                                    <h2>Engineering Trainee Internship</h2>
+                                </div>
+                            </div>
+                            <article class="timeline-card-body">
+                                <ul class="job-desc-list">
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Perform regular checks and maintenance on production tools and machinery.
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Perform sensor data reading and analysis
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Provide feedback and ideas from data analysis and literature review for
+                                            system improvement.
+                                        </p>
+                                    </li>
+                                    <li class="flex justify-start items-center space-x-2 px-2">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                        <p>Create regular reports on the analysis of tin coating systems on steel, based
+                                            on literature review and field observations.
+                                        </p>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                        <div class="company-preview flex items-center pr-32 w-[45%]">
+                            <div class="company-preview-relative top-[-70px] scale-[0.8]">
+                                <img class="object-contain h-full rounded-xl drop-shadow-[10px_15px_10px_rgba(40,194,102,0.6)]"
+                                    src="assets/timeline-exp/latinusa_app.png" alt="">
+                                <div class="top-[30%] p-2 absolute flex flex-col items-center bg-gray-100 right-[-100px] 
+                                        hover:scale-[1.1] hover:ring-3 hover:ring-sky-500 transition-all duration-500
+                                        rounded-xl drop-shadow-[5px_5px_10px_rgba(40,194,102,0.6)]">
+                                    <img class="object-contain p-4 w-[150px]"
+                                        src="assets/timeline-exp/latinusa_logo.png" alt="">
+                                    <button class="py-1 px-3 font-leckerli text-white rounded-lg bg-green-600 ring-2 ring-lime-500
+                                            hover:scale-[1.1] hover:ring-3 transition-all duration-500">
+                                        Check Site
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills"
+            class="py-16 px-[10%]  md:px-[20%] bg-gradient-to-r from-green-500 via-emerald-500 to-lime-500">
+            <style type="text/tailwindcss">
+                .btnSlide {
+                    @apply absolute z-[10] top-[40%] text-[200%] md:text-[300%] rounded-full w-[1.5em] h-[1.5em] bg-blue-600 text-white flex items-center justify-center;
+                    &.left {
+                        @apply left-[-9%] md:left-[-20%] lg:left-[-14%]
+                    }
+                    &.right {
+                        @apply left-[97%] md:left-[105%]
+                    }
+                }
+            </style>
+            <h1 class="text-center text-[3rem] font-roboto font-bold text-white drop-shadow-2xl">My Skills</h1>
+            <h4 class="font-soho text-center font-bold text-sm text-black drop-shadow-lg text-white pb-12">Please Swipe
+                Left/Right</h4>
+            <div class="relative">
+                <i id="btn-left-skill" class="left btnSlide fa-solid fa-arrow-left"></i>
+                <i id="btn-right-skill" class="right btnSlide fa-solid fa-arrow-right"></i>
+                <div id="container-skill" class="overflow-x-scroll transition-all duration-500 bg-cyan-600 rounded-xl">
+                    <div class="relative flex items-center space-x-16 w-max px-4 py-8">
+                        <div id="skills-qa"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Software QA Engineer
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>BDD, Gherkin, Junit, Jbehave, Java, OOP,
+                                    Selenium, PHP, Mock, Mocha Js, Serenity,
+                                    Zalenium, Selenoid, Maven, Rest Assured, K6, Jmeter,
+                                    Json Schema Validator, Xpath, CSS Selector, Testlink, Xray
+                                    Cloud, Rest API, Katalon, Javascript, Shell, Testlink
+                                    , Locust, Espresso, UI Automator, Katalon, Appium
+                                    Playwright, Visual Test, Applitools, Postman, Webdriver IO,
+                                    Device Farm, Browserstack, Google Light House</p>
+                            </div>
+                        </div>
+                        <div id="skills-software"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Software Engineer
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>C++, Python, HTML, CSS, PHP, Javascript, jQuery,
+                                    Bootstrap, Gitlab CI/CD pipeline, Jenkins,
+                                    terraform, bash and script command, cronjob,
+                                    grafana, Codeigniter, Yii, Apache, AWS, (EC2,
+                                    Route 53, Cloud Front, S3 Simple Storage). Shell /
+                                    CLI, Open Computer Vision (CV), Big Query,
+                                    MySQL, PostgreSQL, Matlab, Regular Expression
+                                    (Regex), REST API, Java Swing (GUI), JavaFX,
+                                    Looker Data Studio
+                                </p>
+                            </div>
+                        </div>
+                        <div id="skills-electronic"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Electronics and<br> Embedded System
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p> Assembly, C, Eagle PCB Designer, Electronics
+                                    Simulator (Proteus, Ni Multisim, Circuit Maker), 32
+                                    Bit CooCoox for STM32 Family, STM Studio,
+                                    Codevision AVR for ATMega, Family, Arduino
+                                    Family, Raspberry PI, PWM and Other Signal,
+                                    Generator, ADC/DAC, Neural Networks & Artificial
+                                    Intelegence, FPGA Quartus, FPAA Anadigm
+                                    Designer, Rs485, Rs232, SIM 800, Accessing
+                                    Dynamixel Servomotor
+                                </p>
+                            </div>
+                        </div>
+                        <div id="skills-devops"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                DevOps Engineer
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>
+                                    Terraform, GCP, AWS, Trello, CI/CD, Travis, Docker, Jenkins, Git, Github, Gitlab,
+                                    Github
+                                    Action, Gitlab Pipeline, Terraform, Ansible, Grafana, Looker Studio, GCP Secret
+                                    Manager,
+                                    GCP APIs & Service Account, GCP Compute Engine, GCP Big Query, GCP IAM & Admin,
+                                    MySQL,
+                                    PostgreSQL, ETL
+                                </p>
+                            </div>
+                        </div>
+                        <div id="skills-project"
+                            class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
+
+                            <h2
+                                class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
+                                Project Management & Others
+                            </h2>
+                            <div class="text-center text-white font-inter font-semibold">
+                                <p>
+                                    Jira, Pivotal Tracker, Clickup, Agile Methodology,
+                                    Scrum Framework, Kanban Board, Testlink, Test
+                                    Management For Jira (TM4J), Corel Draw,
+                                    Paint.Net, Adobe Flash Animation, Mac OS,
+                                    Windows OS, Ubuntu OS (using SSH & SFTP),
+                                    aws, Linux , OS,Microsoft Office (Ms. Word, Ms.
+                                    Power Point, Ms. Excel, Ms. Outlook), Adobe
+                                    Audition
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="education-slide-show" class="bg-gradient-to-t from-emerald-400 via-teal-400 to-sky-500">
+            <h2 class="font-soho text-center font-bold text-4xl pt-12 text-white  drop-shadow-lg">Educational Background
+            </h2>
+            <h4 class="font-soho text-center font-bold text-sm text-white drop-shadow-lg">Please Click Left/Right</h4>
+            <div class="relative py-16">
+                <i id="edu-slide-left" class="fa-solid fa-chevron-left absolute top-[250px] left-[15%] w-16 h-16 cursor-pointer
+                            flex justify-center items-center bg-slate-300 rounded-full text-2xl"></i>
+                <i id="edu-slide-right" class="fa-solid fa-chevron-right absolute top-[250px] right-[15%] w-16 h-16 cursor-pointer
+                            flex justify-center items-center bg-slate-300 rounded-full text-2xl"></i>
+                <style type="text/tailwindcss">
+                    .education-slide-center {
+                        @apply  h-[400px] w-[400px] rounded-xl;
+                        & h1{
+                            @apply text-red-500;
+                        }
+                        & .edu-detail{
+                            @apply bg-red-500;
+                        }
+                    }
+                    #order-slide-edu{
+                        & .active{
+                            @apply bg-red-500;
+                        }
+                    }
+                </style>
+                <div id="edu-items-parent" class="flex justify-center items-center transition-all duration-500">
+                    <div class="edu-item h-[300px] w-[300px] flex flex-col justify-between overflow-hidden">
+                        <h1 class="bg-white w-full text-blue-500 text-center font-bold py-2 font-soho">Senior High
+                            School
+                        </h1>
+                        <img class="h-full overflow-hidden object-cover" src="assets/slideshow/smancil_bg.jpg">
+                        <div
+                            class="edu-detail flex flex-col justify-center items-center text-white font-inter font-semibold py-2 bg-sky-500">
+                            <h2>SMAN 1 Cilegon</h2>
+                            <h3>Natural Science</h3>
+                            <h3>2012-2015</h3>
+                        </div>
+                    </div>
+                    <div class="edu-item h-[300px] w-[300px] flex flex-col bg-sky-500 overflow-hidden">
+                        <h1 class="bg-white w-full text-blue-500 text-center font-bold py-2 font-soho">
+                            Bachelor Degree
+                        </h1>
+                        <img class="h-full overflow-hidden object-cover" src="assets/slideshow/its_bg.jpg" alt="">
+                        <div
+                            class="edu-detail flex flex-col justify-center items-center text-white font-inter font-semibold py-2 text-center">
+                            <h2>Institut Teknologi Sepuluh Nopember</h2>
+                            <h3>Electrical Engineering</h3>
+                            <h4>GPA: 3.53 Out Of 4.00</h4>
+                            <h3>2015-2019</h3>
+                        </div>
+                    </div>
+                    <div class="edu-item h-[300px] w-[300px] flex flex-col justify-between overflow-hidden">
+                        <h1 class="bg-white w-full text-blue-500 text-center font-bold py-2 font-soho">Non Formal
+                            Education
+                        </h1>
+                        <img class="h-full overflow-hidden object-cover" src="assets/slideshow/revou.jpg">
+                        <div
+                            class="edu-detail flex flex-col justify-center items-center text-white font-inter font-semibold py-2 bg-sky-500">
+                            <h2>Revou</h2>
+                            <h3>Full Stack Engineer</h3>
+                            <h3>2024-2025</h3>
+                        </div>
+                    </div>
+                    <div class="edu-item h-[300px] w-[300px] flex flex-col justify-between overflow-hidden">
+                        <h1 class="bg-white w-full text-blue-500 text-center font-bold py-2 font-soho">Non Formal
+                            Education
+                        </h1>
+                        <img class="h-full overflow-hidden object-cover" src="assets/slideshow/alterra.jpg">
+                        <div
+                            class="edu-detail flex flex-col justify-center items-center text-white font-inter font-semibold py-2 bg-sky-500">
+                            <h2>Alterra Academy</h2>
+                            <h3>QA Engineer</h3>
+                            <h3>2019</h3>
+                        </div>
+                    </div>
+                </div>
+                <div id="order-slide-edu" class="flex justify-center items-center pt-6 space-x-2 font-bold text-white">
+                    <button class="bg-sky-500 hover:bg-red-400 py-2 px-4 rounded-full active">1</button>
+                    <button class="bg-sky-500 hover:bg-red-400 py-2 px-4 rounded-full">2</button>
+                    <button class="bg-sky-500 hover:bg-red-400 py-2 px-4 rounded-full">3</button>
+                    <button class="bg-sky-500 hover:bg-red-400 py-2 px-4 rounded-full">4</button>
+                </div>
+            </div>
+        </section>
+        <section id="achievement" class="bg-teal-500 py-32">
+            <div
+                class="px-[8%] flex flex-col space-y-4 sm:space-y-0 sm:grid sm:gap-4 sm:grid-rows-none sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <div class="col-span-2 h-full w-full text-white font-bold text-2xl sm:pr-16 md:text-4xl">
+                    <div class="h-full w-full flex flex-col items-start justify-center">
+                        <h2>TAKE A LOOK</h2>
+                        <h2>AT MY ACHIEVEMENT AND</h2>
+                        <h2>ORGANIZATION EXPERIENCE</h2>
+                        </h2>
+                        <h3 class="text-[1.1rem] pt-2 text-justify md:text-xl md:pt-4">
+                            There are some of my achievements and organizational involvements during my study at
+                            university
+                        </h3>
+                    </div>
+                </div>
+                <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
+                    <div class="h-full flex flex-col justify-center items-between">
+                        <img class="h-[70%] object-cover object-top" src="assets/achievement-org/juara_2_nasional.jpg">
+                        <div
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
+                            <h2>2nd Place - National</h2>
+                            <h2>Kontes Robot Indonesia (KRI)</h2>
+                            <h2>2018</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
+                    <div class="h-full flex flex-col justify-center items-between">
+                        <img class="h-[70%] object-cover object-top" src="assets/achievement-org/juara_3_regional.jpg">
+                        <div
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
+                            <h2>3rd Place -Regional</h2>
+                            <h2>Kontes Robot Indonesia (KRI)</h2>
+                            <h2>2017</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
+                    <div class="h-full flex flex-col justify-center items-between">
+                        <img class="h-[70%] object-cover object-top"
+                            src="assets/achievement-org/best_design_nasional.jpg">
+                        <div
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
+                            <h2>Best Design - National</h2>
+                            <h2>Kontes Robot Indonesia (KRI)</h2>
+                            <h2>2018</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
+                    <div class="h-full flex flex-col justify-center">
+                        <div
+                            class="relative h-[45rem] bg-[url('assets/achievement-org/software_developer.jpeg')] bg-cover bg-no-repeat">
+                            <img class="absolute top-4 left-4 w-16" src="assets/achievement-org/c_plus_logo.png">
+                        </div>
+                        <div
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
+                            <h2>Software Developer</h2>
+                            <h2>ITS Robotics Team</h2>
+                            <h2>2016-2019</h2>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden lg:col-span-2 lg:w-[70%] lg:ml-20 xl:ml-0 xl:col-span-1 xl:w-full">
+                    <div class="h-full flex flex-col justify-center items-between">
+                        <img class="h-[67%] object-fit object-top" class="h-[200px] object-cover"
+                            src="assets/achievement-org/lab_402.jpg">
+                        <div
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter text-md font-bold text-white">
+                            <h2>Chief of Laboratory Assistant</h2>
+                            <h2>Industrial Electronics <span class="sm:hidden md:inline xl:hidden">Laboratory ITS</span>
+                            </h2>
+                            <h2 class="hidden sm:block md:hidden xl:block">Laboratory ITS</h2>
+                            <h2>2018-2019</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="h-80 w-full rounded-tl-[2rem] rounded-br-[2rem] overflow-hidden">
+                    <div class="h-full flex flex-col justify-center items-between">
+                        <img class="h-[70%] object-cover object-top" src="assets/achievement-org/baduy.jpg">
+                        <div
+                            class="h-full flex flex-col justify-center items-center bg-teal-700 font-inter font-xl font-bold text-white">
+                            <h2>Head of Social and Community</h2>
+                            <h2>BADUY</h2>
+                            <h2>2017-2018</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section id="testimonial">
+            <h1 class="text-center ">What they say about me?</h1>
+            <div class="carousel"></div>
+        </section> -->
+        <!-- <section id="galleries">
+            <div class="grid gtid-cols-4 gap-4">
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+                <div><img src="" alt="" srcset=""></div>
+            </div>
+        </section> -->
+    </main>
+    <footer>
+        <section id="contact-me"
+            class="relative bg-[url('assets/background/stacked-peaks-haikei.png')] bg-no-repeat bg-cover z-[-1]">
+            <div class="py-16 mx-[8%]">
+                <h1 class="text-center text-3xl pb-2 font-leckerli drop-shadow-3xl">Send Us a Message!</h1>
+                <h2 class="text-center pb-12 font-semibold font-inter italic drop-shadow-3xl">
+                    Feel free to reach me out whenever you need my expertise!
+                </h2>
+                <div class="md:flex items-center justify-center mx-auto md:space-x-16 space-y-16 md:space-y-0">
+                    <div class="thumnbails xl:w-[40%]">
+                        <h2 class="text-3xl font-bold">If not now, when?</h2>
+                        <h2 class="text-3xl font-bold">
+                            Let’s Connect and Collaborate!
+                        </h2>
+                        <p class="pt-4 text-justify text font-inter">
+                            Are you looking for a dedicated professional who combines technical expertise, innovative
+                            thinking, and a passion for excellence? I am here to help you achieve your goals with
+                            confidence and precision. With a strong foundation in IT industries, years of experience
+                            tackling diverse challenges, and a proven ability to deliver impactful results, I am ready
+                            to contribute to your organization’s success.
+                        </p>
+                        <div class="pt-6">
+                            <img class="w-40" src="assets/ttd2.png" alt="" srcset="">
+                            <h4 class="font-leckerli">Anjas Muhammad Bangun</h4>
+                        </div>
+                    </div>
+                    <div class="md:w-[50%]">
+                        <h1 class="text-center font-inter font-bold text-xl pb-4">Please Fill Out This Form</h1>
+                        <form id="msg-form" class="mx-auto flex flex-col space-y-4 w-full max-w-[450px]" action="">
+                            <input id="msgName" class="h-10 px-4" type="text" placeholder="Your Name">
+                            <input id="msgEmail" class="h-10 px-4" type="text" placeholder="Your E-mail">
+                            <input id="msgPhone" class="h-10 px-4" type="text" placeholder="Your Phone Number">
+                            <input id="msgSubject" class="h-10 px-4" type="text" placeholder="Subject">
+                            <textarea id="msgTxt" class="px-4 pt-2 h-40" form="msg-form"
+                                placeholder="Message"></textarea>
+                            <div class="flex justify-center space-x-16 text-white font-semibold">
+                                <button id="btnSendWA" class="w-48 h-12 bg-blue-600" type="button">
+                                    Send to Whatsapp
+                                </button>
+                                <button id="btnSendEmail" class="w-48 h-12 bg-blue-600" type="button">Send to
+                                    E-mail</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="footer-info" class="">
+            <div class="flex flex-col space-y-12 items-center py-16 bg-slate-200
+                        md:flex-row md:justify-evenly md:items-start md:px-0 md:space-y-0">
+                <div id="contacts">
+                    <h2 class="text-center text-3xl font-semibold font-inter border-b-4 border-black">Contacts</h2>
+                    <div class="flex flex-col justify-center font-inter text-sm font-semibold space-y-2 pt-4">
+                        <h3 class="text-center md:text-left font-inter text-md font-semibold">
+                            <i class="fa-solid fa-location-dot"></i> Jakarta, Indonesia
+                        </h3>
+                        <a class="text-center md:text-left"
+                            href="mailto:anjasmuhamadb123@gmail.com?subject=HR Recruitment&body=Hi,I found this website and want to hire you!">
+                            <i class="fa-solid fa-envelope"></i> anjasmuhamadb123@gmail.com
+                        </a>
+                        <a class="text-center md:text-left" href="https://www.linkedin.com/in/anjasmbe/">
+                            <i class="fa-brands fa-linkedin"></i> linkedin.com/in/anjasmbe/
+                        </a>
+                        <a class="text-center md:text-left"
+                            href="https://api.whatsapp.com/send/?phone=6281901777719&text=Hi,I found this website and want to hire you!&type=phone_number&app_absent=0">
+                            <i class="fa-brands fa-whatsapp"></i> 081901777719
+                        </a>
+                        <a class="text-center md:text-left" href="https://t.me/ambbbme">
+                            <i class="fa-brands fa-telegram"></i> @ambbme
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-[30%]">
+                    <img class="w-32 mx-auto pb-4" src="assets/logo/box_transparent.png">
+                    <h2 class="text-2xl font-inter text-center">5+ Years experience in IT Induestires</h2>
+                    <h2 class="text-md font-inter text-center pt-4">A professional Software Quality Assurance
+                        Specialist, Software Engineer, and Electrical Engineer
+                    </h2>
+                </div>
+                <div class="md:w-[30%]">
+                    <h1 class="text-center font-inter font-semibold text-3xl border-b-4 border-black">Keywords</h1>
+                    <div class="grid grid-cols-2 gap-x-10 items-center font-inter pt-4">
+                        <h2>Quality Architect</h2>
+                        <h2>Software Developer Engineer in Test</h2>
+                        <h2>Quality Engineer</h2>
+                        <h2>Quality Analyst</h2>
+                        <h2>Fullstack Engineer</h2>
+                        <h2>Frontend Engineer</h2>
+                        <h2>Backend Engineer</h2>
+                        <h2>Embedded System Developer</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="coba">
+            <style type="text/tailwindcss">
+                #coba .flex >* {
+                    @apply shrink-0 grow-0;
+                }
+                /* *::-webkit-scrollbar {
+                    display: none;
+                } */
+            </style>
+            <div class="w-64 h-64 border-2 border-black"></div>
+            <div id="coba-scroll"
+                class="w-full h-[300px] px-64 overflow-y-scroll text-center">
+                <ul id="coba-ul">
+                    <li class="w-64 h-64 border-2 border-red-500">1</li>
+                    <li class="w-64 h-64 border-2 border-red-500">2</li>
+                    <li class="w-64 h-64 border-2 border-red-500">3</li>
+                    <li class="w-64 h-64 border-2 border-red-500">4</li>
+                    <li class="w-64 h-64 border-2 border-red-500">5</li>
+                    <li class="w-64 h-64 border-2 border-red-500">6</li>
+                    <li class="w-64 h-64 border-2 border-red-500">7</li>
+                    <li class="w-64 h-64 border-2 border-red-500">8</li>
+                </ul>
+            </div>
+            <div class="w-64 h-64 border-2 border-black"></div>
+            <div class="w-64 h-64 border-2 border-black"></div>
+            <div class="w-64 h-64 border-2 border-black"></div>
+            <div class="w-64 h-64 border-2 border-black"></div>
+        </section>
+        <section id="copyright" class="bg-black border-t-4 border-solid border-red-500">
+            <h2 class="text-center text-white p-2">
+                Made with <i class="fa-solid fa-heart text-red-500"></i> by Anjas Muhammad Bangun<br>
+                Copyright<i class="fa-regular fa-copyright align-super text-[10px]"></i> 2024 - All rights reserved
+            </h2>
+        </section>
+    </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>

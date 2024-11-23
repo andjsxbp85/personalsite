@@ -14,11 +14,11 @@ function removeClass(element, className) {
     element.classList.remove(className)
 }
 
-function goToUrl(url){
+function goToUrl(url) {
     window.location.assign(url)
 }
 
-function openUrl(url){
+function openUrl(url) {
     window.open(url)
 }
 
@@ -241,6 +241,69 @@ containerSkill.addEventListener('mousemove', (e) => {
 })
 
 // ======================================= End of Skill Swipe =======================================
+
+
+
+//========================== start of coba ==============================
+
+// Listen to scroll events for both directions
+const scrollContainer = document.getElementById('coba-scroll');
+const list = document.getElementById('coba-ul');
+const items = Array.from(list.children);
+
+// Clone items to enable looping
+const cloneItems = () => {
+    // Clone for the bottom
+    items.forEach((item) => {
+        const clone = item.cloneNode(true);
+        list.appendChild(clone);
+    });
+
+    // Clone for the top (reverse order)
+    const reversedItems = [...items].reverse();
+    reversedItems.forEach((item) => {
+        const clone = item.cloneNode(true);
+        list.insertBefore(clone, list.firstChild);
+    });
+};
+
+// Clone the items
+cloneItems();
+
+// Adjust scroll to the middle (original list position)
+const adjustScrollToMiddle = () => {
+    scrollContainer.scrollTop = list.scrollHeight / 3; // Middle of the original list
+};
+
+// Initialize the scroll position
+adjustScrollToMiddle();
+
+scrollContainer.addEventListener('scroll', () => {
+    console.log("======================= start ============================");
+    console.log("=========== scrollContainer.scrollTop=" + scrollContainer.scrollTop);
+    console.log("=========== list.scrollTop=" + list.scrollTop);
+    console.log("=========== scrollContainer.scrollHeight=" + scrollContainer.scrollHeight);
+    console.log("=========== list.scrollHeight=" + list.scrollHeight);
+    console.log("=========== scrollContainer.clientHeight=" + scrollContainer.clientHeight);
+    console.log("===========  list.clientHeight=" + list.clientHeight);
+    console.log("======================= END ============================");
+
+    const scrollTop = scrollContainer.scrollTop;
+    const scrollHeight = list.scrollHeight;
+    const visibleHeight = scrollContainer.clientHeight;
+
+    // When scrolling down past the end
+    if (scrollTop >= scrollHeight - visibleHeight) {
+        scrollContainer.scrollTop = scrollHeight / 3 - visibleHeight;
+    }
+
+    // When scrolling up past the top
+    if (scrollTop <= 0) {
+        scrollContainer.scrollTop = scrollHeight / 3;
+    }
+});
+//=============================== end ofcoba ===============================
+
 /*// ======================================= Start of Testimonial Carousel =======================================
 class Carousel {
     constructor(el) {
