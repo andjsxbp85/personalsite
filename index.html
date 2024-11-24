@@ -704,44 +704,40 @@
                 <i id="btn-left-skill" class="left btnSlide fa-solid fa-arrow-left"></i>
                 <i id="btn-right-skill" class="right btnSlide fa-solid fa-arrow-right"></i>
                 <div id="container-skill" class="overflow-x-scroll transition-all duration-500 bg-cyan-600 rounded-xl">
-                    <div class="relative flex items-center space-x-16 w-max px-4 py-8">
-                        <div id="skills-qa"
+                    <ul id="skill-lists" class="relative flex items-center space-x-16 w-max px-4 py-8">
+                        <li id="skills-qa"
                             class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
                             <h2
                                 class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
                                 Software QA Engineer
                             </h2>
                             <div class="text-center text-white font-inter font-semibold">
-                                <p>BDD, Gherkin, Junit, Jbehave, Java, OOP,
-                                    Selenium, PHP, Mock, Mocha Js, Serenity,
-                                    Zalenium, Selenoid, Maven, Rest Assured, K6, Jmeter,
-                                    Json Schema Validator, Xpath, CSS Selector, Testlink, Xray
-                                    Cloud, Rest API, Katalon, Javascript, Shell, Testlink
-                                    , Locust, Espresso, UI Automator, Katalon, Appium
-                                    Playwright, Visual Test, Applitools, Postman, Webdriver IO,
-                                    Device Farm, Browserstack, Google Light House</p>
+                                <p>
+                                    BDD, Gherkin, Junit, Jbehave, Java, OOP,Selenium, Mock, Mocha Js, Serenity, Allure
+                                    Report, Zalenium, Selenoid, Maven, Rest Assured, K6, Jmeter, Json Schema Validator,
+                                    Xpath, CSS Selector, Testlink, Xray Cloud, Rest API, Katalon, Javascript, Shell,
+                                    Testlink, Locust, Espresso, UI Automator, Katalon, Appium, GoDog, Playwright, Visual
+                                    Test, Applitools, Postman, Webdriver IO,
+                                    Device Farm, Browserstack, Google Light House, Android Cloud Emulator
+                                </p>
                             </div>
-                        </div>
-                        <div id="skills-software"
+                        </li>
+                        <li id="skills-software"
                             class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
                             <h2
                                 class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
                                 Software Engineer
                             </h2>
                             <div class="text-center text-white font-inter font-semibold">
-                                <p>C++, Python, HTML, CSS, PHP, Javascript, jQuery,
-                                    Bootstrap, Gitlab CI/CD pipeline, Jenkins,
-                                    terraform, bash and script command, cronjob,
-                                    grafana, Codeigniter, Yii, Apache, AWS, (EC2,
-                                    Route 53, Cloud Front, S3 Simple Storage). Shell /
-                                    CLI, Open Computer Vision (CV), Big Query,
-                                    MySQL, PostgreSQL, Matlab, Regular Expression
-                                    (Regex), REST API, Java Swing (GUI), JavaFX,
-                                    Looker Data Studio
+                                <p>C++, Python, HTML, CSS, PHP, Javascript, React, Tailwind, jQuery,
+                                    Bootstrap, grafana, Codeigniter, Yii, Apache, Nginx, Shell / CLI,
+                                    Computer Vision (Open CV), Big Query, MySQL, PostgreSQL, Matlab,
+                                    Regular Expression (Regex), REST API, Java Swing (GUI), JavaFX,
+                                    Looker Data Studio, ETL
                                 </p>
                             </div>
-                        </div>
-                        <div id="skills-electronic"
+                        </li>
+                        <li id="skills-electronic"
                             class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
                             <h2
                                 class="text-center border-b-2 border-white w-max mb-8 font-inter text-xl font-semibold text-white drop-shadow-lg">
@@ -759,8 +755,8 @@
                                     Dynamixel Servomotor
                                 </p>
                             </div>
-                        </div>
-                        <div id="skills-devops"
+                        </li>
+                        <li id="skills-devops"
                             class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
 
                             <h2
@@ -770,16 +766,14 @@
                             <div class="text-center text-white font-inter font-semibold">
                                 <p>
                                     Terraform, GCP, AWS, Trello, CI/CD, Travis, Docker, Jenkins, Git, Github, Gitlab,
-                                    Github
-                                    Action, Gitlab Pipeline, Terraform, Ansible, Grafana, Looker Studio, GCP Secret
-                                    Manager,
-                                    GCP APIs & Service Account, GCP Compute Engine, GCP Big Query, GCP IAM & Admin,
-                                    MySQL,
-                                    PostgreSQL, ETL
+                                    Github Action, Gitlab CI/CD pipeline, Terraform, Ansible, Grafana, Looker Studio,
+                                    GCP, bash and script command, cronjob, GCP Secret Manager, GCP APIs & Service
+                                    Account, GCP Compute Engine, GCP Big Query, GCP IAM & Admin, AWS, (EC2,
+                                    Route 53, Cloud Front, S3 Simple Storage), MySQL, PostgreSQL
                                 </p>
                             </div>
-                        </div>
-                        <div id="skills-project"
+                        </li>
+                        <li id="skills-project"
                             class="flex flex-col items-center w-[300px] md:w-[400px] bg-cyan-500 rounded-2xl p-8">
 
                             <h2
@@ -798,8 +792,8 @@
                                     Audition
                                 </p>
                             </div>
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -1101,6 +1095,7 @@
         </section>
     </footer>
     <script src="app.js"></script>
+    <script src="swiper.js"></script>
 </body>
 
 </html>
